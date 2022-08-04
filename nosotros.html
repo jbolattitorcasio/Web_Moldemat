@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moldemat</title>
+    <!-- LeafletJS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin="" />
+    <!-- Google Fonts (Montserrat, Roboto, Ultra) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Ultra&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="style/all.min.css">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="style/normalize.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <!-- Sidebar -->
+        <div class="sidebar reverse-hidden" style="display: none;" id="mySidebar">
+            <div class="sidebar-info">
+                <div class="sidebar-anchors">
+                    <a href="/servicios.html">Servicios</a>
+                    <a href="/nosotros.html">Nosotros</a>
+                </div>
+                <a class="button-contact" href="/contact.html">Contacto</a>
+                <p>+55423434754</p>
+                <p>De 8:00 a 8:01</p>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <div class="navbar">
+            <a href="/index.html" class="logo">
+                <!-- Main Logo -->
+                <img class="logo-one" src="style/img/Logo_White.png" alt="Logo de Moldemat">
+                <img class="logo-two display-none" src="style/img/Logo_Black.png" alt="Logo de Moldemat">
+                <!-- Aca va el logo de otro color -->
+            </a>
+            <nav class="navbar-anchors hidden">
+                <a href="/servicios.html">Servicios</a>
+                <a href="/nosotros.html">Nosotros</a>
+                <a class="button-contact" href="/contact.html">Contacto</a>
+            </nav>
+
+            <div class="reverse-hidden">
+                <!-- Responsive Bars -->
+                <button class="button-bars" id="bars" onclick="side_open()"><i class="fa-solid fa-bars"></i></button>
+                <button class="button-bars" style="display: none;" id="cross" onclick="side_close()"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-page">
+        <div class="about-page-title">
+            <h3>Sobre Nosotros</h3>
+        </div>
+
+        <div class="about about-first">
+            <div class="about-info">
+                <div class="hidden about-img">
+                    <img src="style/img/Section_About_image.png" alt="Sobre Moldemat">
+                </div>
+                <div class="about-text">
+                    <h4>Un poco de nuestra historia</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque nisi debitis rerum eveniet
+                        odit vitae assumenda, deleniti expedita, perspiciatis, perferendis ducimus quae ad cumque fugiat
+                        iure repellat aut voluptatibus.</p>
+                </div>
+            </div>
+        </div>
+        <div class="reverse-hidden about-triangle about-triangle-first"></div>
+
+        <div class="about about-second">
+            <div class="about-info">
+                <div class="hidden about-img">
+                    <img src="style/img/Section_About_image.png" alt="Sobre Moldemat">
+                </div>
+                <div class="about-text">
+                    <h4>Nuestro Servicio</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque nisi debitis rerum eveniet
+                        odit vitae assumenda, deleniti expedita, perspiciatis, perferendis ducimus quae ad cumque fugiat
+                        iure repellat aut voluptatibus.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reverse-hidden about-triangle-top"></div>
+        <div class="about about-third">
+            <div class="about-info">
+                <div class="hidden about-img">
+                    <img src="style/img/Section_About_image.png" alt="Sobre Moldemat">
+                </div>
+                <div class="about-text">
+                    <h4>Del barrio al mundo, yqs</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque nisi debitis rerum eveniet
+                        odit vitae assumenda, deleniti expedita, perspiciatis, perferendis ducimus quae ad cumque fugiat
+                        iure repellat aut voluptatibus.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-info container">
+            <div class="footer-info-section hidden">
+                <h4>Moldemat</h4>
+                <p class="footer-about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id atque maiores
+                    doloribus, deleniti voluptatibus hic temporibus ducimus corrupti recusandae quisquam incidunt illum
+                    beatae itaque accusamus explicabo nobis dolorem eligendi veniam dolor possimus nam quo. Et rem,
+                    itaque earum corrupti nesciunt eius veritatis ratione soluta tenetur architecto porro reiciendis eos
+                    odit!</p>
+            </div>
+            <div class="footer-info-section">
+                <h4>Servicios</h4>
+                <a href="#">Servicio 1</a>
+                <a href="#">Servicio 2</a>
+                <a href="#">Servicio 3</a>
+            </div>
+            <div class="footer-info-section">
+                <h4>Contacto</h4>
+                <div class="footer-phone">
+                    <p>+3275463765</p>
+                    <p>Horario 8:00 a 8:01</p>
+                </div>
+                <div class="footer-social">
+                    <p>red social 1</p>
+                    <p>red social 2</p>
+                    <p>red social 3</p>
+                </div>
+            </div>
+        </div>
+        <div class="baseboard">
+            <i class="fa-regular fa-copyright"></i>
+            <p class="no-margin">2022 Moldemat SRL. Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- LeafletJS -->
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+    <!-- Modernizr -->
+    <script src="js/modernizr.js"></script>
+    <!-- Main Style -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
