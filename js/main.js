@@ -24,7 +24,7 @@ const cross = document.querySelector('#cross');
 // Arrow
 const arrow = document.querySelector('.arrow');
 //
-const host = "https://snazzy-babka-e25725.netlify.app/";
+const host = "https://resonant-hamster-c60703.netlify.app/";
 const localhost = "http://127.0.0.1:5500/index.html";
 if ((window.location.href == host + 'index.html') || (window.location.href == host) || (window.location.href == localhost)) {
     window.onscroll = () => {
