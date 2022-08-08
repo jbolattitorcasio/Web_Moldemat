@@ -234,7 +234,7 @@ h4 {
 /** BANNER **/
 .banner {
     background: linear-gradient(to top, rgba(26, 26, 26, 0.05), rgba(0, 0, 0, 0.5)),
-    url(https://source.unsplash.com/random/1080x970?soldadura);
+    url(./img/Banner.avif);
     height: 50vh;
     background-size: cover;
     background-repeat: no-repeat;

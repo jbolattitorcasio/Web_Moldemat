@@ -22,6 +22,8 @@
         rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="style/all.min.css">
+    <!--  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Normalize -->
     <link rel="stylesheet" href="style/normalize.css">
     <!-- Main Style -->
@@ -79,7 +81,7 @@
         <i class="fa-solid fa-angle-down"></i>
     </div>
 
-    <section class="about">
+    <section class="about" data-aos="fade-right" data-aos-duration="1000">
         <div class="about-info">
             <div class="hidden about-img">
                 <img src="style/img/Section_About_image.png" alt="Sobre Moldemat">
@@ -99,7 +101,7 @@
         <img class="hidden" src="/style/img/Section_Example.png" alt="">
     </div>
 
-    <section class="client">
+    <section class="client" data-aos="fade-up" data-aos-duration="1000">
         <div class="client-info">
             <h4>Nuestros Clientes</h4>
             <a href="#">Ver Más <i class="fa-solid fa-angle-right"></i></a>
@@ -118,7 +120,7 @@
         <img class="hidden" src="/style/img/Section_Example.png" alt="">
     </div>
 
-    <section class="contact">
+    <section class="contact" data-aos="fade-down" data-aos-duration="1000">
         <h4 class="contact-title">Contactanos</h4>
         <div class="contact-info">
             <div class="contact-form contact-info-div">
@@ -200,6 +202,11 @@
     crossorigin=""></script>
     <!-- Modernizr -->
     <script src="js/modernizr.js"></script>
+    <!--  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- Main Style -->
     <script src="js/main.js"></script>
 </body>
